@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Connection Executive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Global Connection <span>Executive</span></div>
+    <nav>
+      <button onclick="navigate('empresa')">A EMPRESA</button>
+      <button onclick="navigate('servicos')">SERVIÇOS</button>
+      <button onclick="navigate('contato')">CONTATE-NOS</button>
+      <button class="login" onclick="navigate('login')">LOGIN</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>CONEXÃO EXECUTIVA GLOBAL, 24 HORAS POR DIA.</h1>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Etiqueta e Cultura Corporativa Global.</li>
+      <li>Organização de Viagens Executivas;</li>
+      <li>Suporte em Comunicação Multilíngue;</li>
+      <li>Gestão de Documentos e Informações;</li>
+      <li>Apoio em Eventos e Reuniões Online;</li>
+      <li>Atendimento Personalizado VIP 24/7;</li>
+      <li>Gestão de Agenda Internacional;</li>
+    </ul>
+  </section>
+
+  <section id="planos" class="planos">
+    <h2>Planos</h2>
+    <div class="plano">
+      <h3>Plus</h3>
+      <p>Inclui:<br>
+        - Gestão de Documentos<br>
+        - Agenda Internacional<br>
+        - Apoio em Eventos Online
+      </p>
+      <strong>R$ 1.900,00 / mês</strong>
+      <button onclick="navigate('contratarPlus')">CONTRATAR PLANO</button>
+    </div>
+    <div class="plano">
+      <h3>Gold</h3>
+      <p>Inclui todos do Plus +<br>
+        - Comunicação Multilíngue<br>
+        - Viagens Executivas
+      </p>
+      <strong>R$ 3.200,00 / mês</strong>
+      <button onclick="navigate('contratarGold')">CONTRATAR PLANO</button>
+    </div>
+    <div class="plano">
+      <h3>Platinum</h3>
+      <p>Inclui todos do Plus e Gold +<br>
+        - Atendimento VIP 24/7<br>
+        - Etiqueta Corporativa Global
+      </p>
+      <strong>R$ 5.000,00 / mês</strong>
+      <button onclick="navigate('contratarPlatinum')">CONTRATAR PLANO</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contato: (+55 81) 3345-6790 | globalconnection@executive.com</p>
+    <p>Endereço: Av. República do Líbano, 256, Recife-PE - 12º andar, sala 802</p>
+    <p>&copy; 2025 Global Connection Executive</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

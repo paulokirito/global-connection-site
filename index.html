@@ -13,7 +13,7 @@
       <button onclick="navigate('empresa')">A EMPRESA</button>
       <button onclick="navigate('servicos')">SERVIÇOS</button>
       <button onclick="navigate('contato')">CONTATE-NOS</button>
-      <button class="login" onclick="navigate('login')">LOGIN</button>
+      <button class="login" onclick="openModal()">LOGIN</button>
     </nav>
   </header>
 
@@ -21,7 +21,7 @@
     <h1>CONEXÃO EXECUTIVA GLOBAL, 24 HORAS POR DIA.</h1>
   </section>
 
-  <section id="servicos" class="servicos">
+  <section id="servicos" class="servicos scroll-reveal">
     <h2>Serviços</h2>
     <ul>
       <li>Etiqueta e Cultura Corporativa Global.</li>
@@ -35,8 +35,8 @@
   </section>
 
   <section id="planos" class="planos">
-    <h2>Planos</h2>
-    <div class="plano">
+    <h2 class="scroll-reveal">Planos</h2>
+    <div class="plano scroll-reveal">
       <h3>Plus</h3>
       <p>Inclui:<br>
         - Gestão de Documentos<br>
@@ -46,7 +46,7 @@
       <strong>R$ 1.900,00 / mês</strong>
       <button onclick="navigate('contratarPlus')">CONTRATAR PLANO</button>
     </div>
-    <div class="plano">
+    <div class="plano scroll-reveal">
       <h3>Gold</h3>
       <p>Inclui todos do Plus +<br>
         - Comunicação Multilíngue<br>
@@ -55,7 +55,7 @@
       <strong>R$ 3.200,00 / mês</strong>
       <button onclick="navigate('contratarGold')">CONTRATAR PLANO</button>
     </div>
-    <div class="plano">
+    <div class="plano scroll-reveal">
       <h3>Platinum</h3>
       <p>Inclui todos do Plus e Gold +<br>
         - Atendimento VIP 24/7<br>
@@ -66,11 +66,37 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="scroll-reveal">
     <p>Contato: (+55 81) 3345-6790 | globalconnection@executive.com</p>
     <p>Endereço: Av. República do Líbano, 256, Recife-PE - 12º andar, sala 802</p>
     <p>&copy; 2025 Global Connection Executive</p>
   </footer>
+
+  <!-- MODAL LOGIN/CADASTRO -->
+  <div id="modalLogin" class="modal">
+    <div class="modal-content scroll-reveal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="form-header">
+        <button id="btnLogin" class="active">Login</button>
+        <button id="btnCadastro">Cadastro</button>
+      </div>
+
+      <form id="formLogin" class="form-content active">
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+        <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+      </form>
+
+      <form id="formCadastro" class="form-content">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <input type="password" placeholder="Confirmar senha" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

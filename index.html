@@ -10,61 +10,90 @@
   <header>
     <div class="logo">Global Connection <span>Executive</span></div>
     <nav>
-      <button onclick="navigate('empresa')">A EMPRESA</button>
-      <button onclick="navigate('servicos')">SERVIÇOS</button>
-      <button onclick="navigate('contato')">CONTATE-NOS</button>
-      <button class="login" onclick="openModal()">LOGIN</button>
+      <button type="button" onclick="navigate('empresa')">A EMPRESA</button>
+      <button type="button" onclick="navigate('servicos')">SERVIÇOS</button>
+      <button type="button" onclick="navigate('contato')">CONTATE-NOS</button>
+      <button type="button" class="login" onclick="openModal()">LOGIN</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>CONEXÃO EXECUTIVA GLOBAL, 24 HORAS POR DIA.</h1>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>CONEXÃO EXECUTIVA GLOBAL, 24 HORAS POR DIA.</h1>
+    </section>
 
-  <section id="servicos" class="servicos scroll-reveal">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Etiqueta e Cultura Corporativa Global.</li>
-      <li>Organização de Viagens Executivas;</li>
-      <li>Suporte em Comunicação Multilíngue;</li>
-      <li>Gestão de Documentos e Informações;</li>
-      <li>Apoio em Eventos e Reuniões Online;</li>
-      <li>Atendimento Personalizado VIP 24/7;</li>
-      <li>Gestão de Agenda Internacional;</li>
-    </ul>
-  </section>
+    <!-- Seção de Serviços-->
+    <section id="servicos" class="servicos scroll-reveal">
+      <h2>Serviços</h2>
+      <ul class="servicos-lista">
+        <li>
+          <span class="servico-titulo">Etiqueta e Cultura Corporativa Global</span>
+          <span class="servico-descricao">Orientação sobre práticas e costumes empresariais internacionais.</span>
+        </li><li>
+          <span class="servico-titulo">Organização de Viagens Executivas</span>
+          <span class="servico-descricao">Planejamento completo de viagens corporativas.</span>
+        </li><li>
+          <span class="servico-titulo">Suporte em Comunicação Multilíngue</span>
+          <span class="servico-descricao">Assistência em diferentes idiomas para negócios globais.</span>
+        </li><li>
+          <span class="servico-titulo">Gestão de Documentos e Informações</span>
+          <span class="servico-descricao">Administração segura de arquivos e dados empresariais.</span>
+        </li><li>
+          <span class="servico-titulo">Apoio em Eventos e Reuniões Online</span>
+          <span class="servico-descricao">Suporte técnico e logístico para eventos digitais.</span>
+        </li><li>
+          <span class="servico-titulo">Atendimento Personalizado VIP 24/7</span>
+          <span class="servico-descricao">Serviço exclusivo e contínuo para clientes especiais.</span>
+        </li><li>
+          <span class="servico-titulo">Gestão de Agenda Internacional</span>
+          <span class="servico-descricao">Organização de compromissos em diferentes fusos horários.</span>
+        </li>
+      </ul>
+    </section>
 
-  <section id="planos" class="planos">
-    <h2 class="scroll-reveal">Planos</h2>
-    <div class="plano scroll-reveal">
-      <h3>Plus</h3>
-      <p>Inclui:<br>
-        - Gestão de Documentos<br>
-        - Agenda Internacional<br>
-        - Apoio em Eventos Online
-      </p>
-      <strong>R$ 1.900,00 / mês</strong>
-      <button onclick="navigate('contratarPlus')">CONTRATAR PLANO</button>
-    </div>
-    <div class="plano scroll-reveal">
-      <h3>Gold</h3>
-      <p>Inclui todos do Plus +<br>
-        - Comunicação Multilíngue<br>
-        - Viagens Executivas
-      </p>
-      <strong>R$ 3.200,00 / mês</strong>
-      <button onclick="navigate('contratarGold')">CONTRATAR PLANO</button>
-    </div>
-    <div class="plano scroll-reveal">
-      <h3>Platinum</h3>
-      <p>Inclui todos do Plus e Gold +<br>
-        - Atendimento VIP 24/7<br>
-        - Etiqueta Corporativa Global
-      </p>
-      <strong>R$ 5.000,00 / mês</strong>
-      <button onclick="navigate('contratarPlatinum')">CONTRATAR PLANO</button>
-    </div>
-  </section>
+    <section id="planos" class="planos">
+      <h2 class="scroll-reveal">Planos</h2>
+      
+      <!-- Plano Plus -->
+      <div class="plano scroll-reveal">
+        <h3>Plus</h3>
+        <ul>
+          <li>Gestão de Documentos</li>
+          <li>Agenda Internacional</li>
+          <li>Apoio em Eventos Online</li>
+        </ul>
+        <strong>R$ 1.900,00 / mês</strong>
+        <!-- Botão para contratar plano Plus -->
+        <button type="button" onclick="navigate('contratarPlus')">CONTRATAR PLANO</button>
+      </div>
+      
+      <!-- Plano Gold -->
+      <div class="plano scroll-reveal">
+        <h3>Gold</h3>
+        <ul>
+          <li>Todos do Plus</li>
+          <li>Comunicação Multilíngue</li>
+          <li>Viagens Executivas</li>
+        </ul>
+        <strong>R$ 3.200,00 / mês</strong>
+        <!-- Botão para contratar plano Gold -->
+        <button type="button" onclick="navigate('contratarGold')">CONTRATAR PLANO</button>
+      </div>
+      
+      <!-- Plano Platinum -->
+      <div class="plano scroll-reveal">
+        <h3>Platinum</h3>
+        <ul>
+          <li>Todos do Plus e Gold</li>
+          <li>Atendimento VIP 24/7</li>
+          <li>Etiqueta Corporativa Global</li>
+        </ul>
+        <strong>R$ 5.000,00 / mês</strong>
+        <!-- Botão para contratar plano Platinum -->
+        <button type="button" onclick="navigate('contratarPlatinum')">CONTRATAR PLANO</button>
+      </div>
+    </section>
+  </main>
 
   <footer class="scroll-reveal">
     <p>Contato: (+55 81) 3345-6790 | globalconnection@executive.com</p>
@@ -73,26 +102,28 @@
   </footer>
 
   <!-- MODAL LOGIN/CADASTRO -->
-  <div id="modalLogin" class="modal">
+  <div id="modalLogin" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-content scroll-reveal">
-      <span class="close" onclick="closeModal()">&times;</span>
+      <span class="close" onclick="closeModal()" aria-label="Fechar">&times;</span>
       <div class="form-header">
-        <button id="btnLogin" class="active">Login</button>
-        <button id="btnCadastro">Cadastro</button>
+        <button id="btnLogin" class="active" type="button">Login</button>
+        <button id="btnCadastro" type="button">Cadastro</button>
       </div>
 
-      <form id="formLogin" class="form-content active">
-        <input type="email" placeholder="E-mail" required />
-        <input type="password" placeholder="Senha" required />
+      <form id="formLogin" class="form-content active" autocomplete="on">
+        <h2 id="modalTitle">Login</h2>
+        <input type="email" placeholder="E-mail" required autocomplete="email" />
+        <input type="password" placeholder="Senha" required autocomplete="current-password" />
         <button type="submit">Entrar</button>
         <a href="#" class="esqueci-senha">Esqueci minha senha</a>
       </form>
 
-      <form id="formCadastro" class="form-content">
-        <input type="text" placeholder="Nome completo" required />
-        <input type="email" placeholder="E-mail" required />
-        <input type="password" placeholder="Senha" required />
-        <input type="password" placeholder="Confirmar senha" required />
+      <form id="formCadastro" class="form-content" autocomplete="on">
+        <h2>Cadastro</h2>
+        <input type="text" placeholder="Nome completo" required autocomplete="name" />
+        <input type="email" placeholder="E-mail" required autocomplete="email" />
+        <input type="password" placeholder="Senha" required autocomplete="new-password" />
+        <input type="password" placeholder="Confirmar senha" required autocomplete="new-password" />
         <button type="submit">Cadastrar</button>
       </form>
     </div>
